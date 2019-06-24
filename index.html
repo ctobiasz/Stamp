@@ -1,24 +1,71 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Stamp</title>
-  </head>
-  <body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <title>Stamp</title>
+</head>
+<body>
 
-<nav>
-  <a href="#">Stamp</a>
-  <a href="#">About</a>
-  <a href="#">Integrations</a>
-  <a href="#">Pricing</a>
-  <a href="#">Contacts</a>
-</nav>
+  <div class="navbar">
+    <ul>
+      <li><a id="brand" href="#">Stamp</a></li>
+      <li><a class="non-brand" href="#">Contacts</a></li>
+      <li><a class="non-brand" href="#">Pricing</a></li>
+      <li><a class="non-brand" href="#">Integrations</a></li>
+      <li><a class="non-brand" href="#">About</a></li>
+      <li><a class="hamburger"><img src="images/icons8-menu-48.png" alt=""></a></li>
+    </ul>
+  </nav>
 
-<footer>
-  <p>Ⓒ 2016 Stamp. All Rights Reserved</p>
-</footer>
+  <div class="nav-overlay">
+    <div class="overlay-content">
+      <ul>
+        <li><a class="close-button"><img src="images/icons8-circled-x-50.png" alt=""></a></li>
+        <li class="overlay-li"><a href="#">Contacts</a></li>
+        <li class="overlay-li"><a href="#">Pricing</a></li>
+        <li class="overlay-li"><a href="#">Integrations</a></li>
+        <li class="overlay-li overlay-li-last"><a href="#">About</a></li>
 
+      </ul>
+    </div>
+  </div>
 
-  </body>
+  <div class="container">
+    <div class="fp-text">
+      <div class="container-text">
+        <p class="p-text">Simple Way to </p>
+        <p class="p-text">Oraganize Your </p>
+        <p class="p-text"> Inspirations </p>
+        <p class="des-text">I think what motivates people is not great hate,</p>
+        <p class="des-text"> but great love for other people.</p>
+      </div>
+    </div>
+
+    <div class="fp-form">
+      <p class="signupfree">SIGN UP FOR FREE</p>
+      <form action="">
+        <input class="inputs-form" type="text" name="name" placeholder="Name">
+        <input class="inputs-form" type="email" name="email" placeholder="E-mail">
+        <input class="inputs-form" type="password" name="password" placeholder="Password">
+        <button>Sign up ></button>
+      </form>
+      <p id="form-text">By Clicking "Sign up" I agree to our</p>
+      <a id="tos-form" href="#">Terms of Service</a>
+    </div>
+  </div>
+
+  <footer>
+    <ul id="footer">
+      <li id="rights">Ⓒ 2016 Stamp. All Rights Reserved</li>
+      <li><a class="footer-li" href="#">PRIVACY POLICY</a></li>
+      <li><a class="footer-li" href="#">TERMS OF USE</a></li>
+      <li><a class="footer-li" href="#">HELP</a></li>
+      <li><a class="footer-li" href="#">CONTACT</a></li>
+    </ul>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
 </html>
